@@ -1,0 +1,15 @@
+StudyFlow brainstorm summary
+
+Assignment: Follow the AI-native development workflow; submit a brainstorm chat record, required Markdown docs, a GitHub repo, and detailed GitHub issues.
+
+Chosen idea: StudyFlow, a lightweight study planner for students. It supports task creation with a due date and priority, completion toggles, All/Open/Done filters, deletion, summary counts, and a progress bar.
+
+Reason for selection: The problem is easy to explain and demonstrate. The features can be decomposed into small issues with objective acceptance criteria. Plain HTML/CSS/JavaScript and localStorage avoid complex setup and external services.
+
+Constraints: MVP only. No authentication, cloud sync, reminders, collaboration, or paid APIs. User-provided text must be safely escaped. Tests and manual acceptance checks must be reported honestly.
+
+Issue plan: (1) workflow/spec docs, (2) responsive dashboard, (3) task creation/validation, (4) completion/filter/delete/progress, (5) persistence/safe rendering, (6) QA/release docs.
+
+Workflow: Discover -> specify -> decompose into GitHub issues -> implement -> test -> QA -> acceptance -> commit/push -> close only verified issues.
+
+This is a planning summary, not a verbatim export of a complete chat transcript. Draft issues in _docs/issue-plan.md are not real GitHub events until created in GitHub.

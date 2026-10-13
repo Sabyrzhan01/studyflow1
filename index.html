@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101827"><title>StudyFlow — Study planner</title><link rel="stylesheet" href="styles.css">
+</head><body><main class="shell">
+<header><div><p class="eyebrow">YOUR PERSONAL STUDY SPACE</p><h1>StudyFlow<span>.</span></h1><p class="sub">Small steps. Less stress. Better progress.</p></div><div class="date" id="today"></div></header>
+<section class="hero"><div><p class="eyebrow">THIS WEEK</p><h2>Make room for what matters.</h2><p>Turn deadlines into manageable steps and keep moving.</p></div><div class="progress"><strong id="progressNum">0%</strong><span>completed</span><div class="track"><div id="progressBar"></div></div></div></section>
+<section class="stats"><article><span>Total tasks</span><strong id="total">0</strong></article><article><span>To do</span><strong id="pending">0</strong></article><article><span>Completed</span><strong id="done">0</strong></article></section>
+<section class="panel"><div class="section-title"><div><p class="eyebrow">PLAN YOUR WORK</p><h2>Add a task</h2></div></div><form id="taskForm"><label>Task name<input id="taskTitle" maxlength="100" placeholder="e.g. Finish database assignment" required></label><div class="fields"><label>Due date<input id="taskDate" type="date" required></label><label>Priority<select id="taskPriority"><option value="normal">Normal</option><option value="high">High</option><option value="low">Low</option></select></label></div><button type="submit">+ Add task</button></form></section>
+<section class="panel"><div class="section-title"><div><p class="eyebrow">YOUR WORKLOAD</p><h2>Tasks</h2></div><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="open">Open</button><button class="filter" data-filter="done">Done</button></div></div><div id="taskList" class="task-list"></div><p id="empty" class="empty">No tasks yet. Add your first task above.</p></section>
+<footer>StudyFlow · Your data stays in this browser.</footer></main><script src="app.js"></script></body></html>
